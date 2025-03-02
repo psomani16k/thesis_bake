@@ -31,20 +31,24 @@
 
 > To actually enable an option press Y while hovering on that option, read the top menu for more help
 
-8. Save the config to net-next-nuse/.config (default) file and exit recurrsively.
+8. Save the config to bake/source/net-next-nuse/.config (default) file and exit recurrsively.
 
-9. Go back to bake directory 
+9. In the `bake/source/net-next-nuse/` directory, run:
+
+```cp .config lib/arch/defconfig```
+
+10. Go back to bake directory 
 
 ```cd ../..```
 
-10. Go to `source/net-next-nuse/arch/lib`, edit the Makefile, on line 18 change the repo link from ssh link to https link
+11. Go to `source/net-next-nuse/arch/lib`, edit the Makefile, on line 18 change the repo link from ssh link to https link
 `https://github.com/libos-nuse/linux-libos-tools`
 
-11. Build the projects.
+12. Build the projects.
 ```./bake.py build```
 > add the `-v` or `-vvv` tags for verbose stdout
 
-12. if you get a problem like this:
+13. if you get a problem like this:
 > usr/bin/env: ‘python’: No such file or directory
 > make: *** [arch/lib/Makefile:135: arch/lib/linker.lds] Error 127
 > make: *** Waiting for unfinished jobs....
