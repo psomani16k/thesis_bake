@@ -212,7 +212,7 @@
 
     <module name="linux-dev">
       <source type="git">
-        <attribute name="url" value="git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git" />
+				<attribute name="url" value="https://github.com/torvalds/linux.git" />
         <attribute name="revision" value="master" />
         <attribute name="module_directory" value="linux" />
       </source>
@@ -356,7 +356,7 @@
 
      <module name="iproute2-4.4.0">
        <source type="git">
-         <attribute name="url" value="https://git.kernel.org/pub/scm/linux/kernel/git/shemminger/iproute2.git"/>
+         <attribute name="url" value="https://github.com/iproute2/iproute2.git"/>
          <attribute name="revision" value="v4.4.0"/>
          <attribute name="module_directory" value="iproute2-4.4.0"/>
        </source>
